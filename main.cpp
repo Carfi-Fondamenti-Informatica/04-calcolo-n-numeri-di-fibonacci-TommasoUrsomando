@@ -1,18 +1,22 @@
-#include <iostream>
-using namespace std;
-int main() {
-    int n, a=1, b=1,c;
-    cin >> n;
-    if (n>=2){
-        for(int i=0; i<n; i++){
-            cout <<a<< endl;
-            b=c;
-            c=a;
-            a=b+c;
+#include<iostream>
+usingnamespace std;
+intmain(){
+    int a=1;
+    int b=1;
+    int c;
+    int n;
+    cin>>n;
+    if(n>=2){
+        for (int i=0; i<n; i++)
+        {
+        cout<<a<<endl;
+        c=a;
+        a=b;
+        b=a+c;
         }
     }
-    else {
-        cout << "errore";
+    else{
+    cout<<"errore";
     }
-    return 0;
+    return0;
 }
