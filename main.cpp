@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int n, a=1, b=1,c;
+    int n, a=0, b=1,c;
     cin >> n;
     if (n<2){
         cout << "errore";
@@ -9,8 +9,8 @@ int main() {
     else {
         for(int i=1; i<=n; i++){
             cout <<a<< endl;
-            b=c;
             c=a;
+            a=b;
             a=b+c;
         }
     }
